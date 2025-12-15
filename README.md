@@ -250,8 +250,9 @@ If you find this tutorial helpful, please give it a star! ⭐
 ---
 
 <p align="center">
-  <b>Built with ❤️ for the ML community</b><br>
+  <b>Built by ktiyab</b><br>
   <a href="https://medium.com/@ktiyab_42514">Follow on Medium</a> •
   <a href="https://www.linkedin.com/in/tiyab/">LinkedIn</a> •
   <a href="https://www.kaggle.com/tiyabk">Kaggle</a>
+
 </p>
