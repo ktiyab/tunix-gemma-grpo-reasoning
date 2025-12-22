@@ -316,13 +316,14 @@ def evaluate_model(
     
     for batch in tqdm(dataset, desc="Evaluating", disable=not verbose):
         prompts = batch["prompt"]
+        expected_answers = batch["answer"]
         
         responses = generate(
             list(prompts), sampler, config,
             temperature=temperature, top_k=top_k, top_p=top_p
         )
         
-        for prompt, response in zip(prompts, responses):
+        for prompt, response, expected_answer in zip(prompts, responses, expected_answers):
             total_samples += 1
             
             # Extract tagged content
@@ -347,7 +348,7 @@ def evaluate_model(
             
             # Component scores via reward_analyzer
             analysis = reward_analyzer.analyze_response(
-                response=response, ground_truth=None, prompt=str(prompt)
+                response=response, ground_truth=expected_answer, prompt=str(prompt)
             )
             
             format_scores.append(analysis['raw']['format'])
@@ -357,7 +358,7 @@ def evaluate_model(
             composite_scores.append(analysis['composite'])
             
             all_results.append({
-                'prompt': prompt, 'response': response,
+                'prompt': prompt, 'response': response, 'expected_answer': expected_answer,
                 'has_reasoning': bool(reasoning), 'has_answer': bool(answer),
                 'scores': analysis['raw'], 'composite': analysis['composite'],
             })
@@ -701,4 +702,5 @@ if __name__ == "__main__":
     print("  baseline = evaluator.evaluate(test_dataset)")
     print("  evaluator.load_checkpoint()")
     print("  trained = evaluator.evaluate(test_dataset)")
+
     print("  evaluator.compare(baseline, trained)")
