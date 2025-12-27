@@ -9,7 +9,7 @@
 A comprehensive 8-part tutorial series for training explicit reasoning capabilities into Google's Gemma 3 1B model using **GRPO (Group Relative Policy Optimization)**, **LoRA**, and **Tunix** on **Kaggle's free TPU resources**.
 
 <p align="center">
-  <img src="assets/grpo_pipeline.png" alt="GRPO Training Pipeline" width="700">
+  <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*v_uVgSQKV6kLuWd8Qyieqg.jpeg" alt="GRPO Training Pipeline" width="700">
 </p>
 
 ## 🎯 What You'll Learn
@@ -250,4 +250,5 @@ If you find this tutorial helpful, please give it a star! ⭐
   <a href="https://www.kaggle.com/tiyabk">Kaggle</a>
 
 </p>
+
 
