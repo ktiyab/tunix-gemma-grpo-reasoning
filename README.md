@@ -71,8 +71,8 @@ The trained model produces structured reasoning with explicit `<reasoning>` and 
 
 | Part | Title | Description | Code |
 |------|-------|-------------|------|
-| **1** | [Environment Setup](link) | Install Tunix, configure TPU, set up Kaggle | [`part1_setup.py`](part1_setup.py) |
-| **2** | [GRPO Algorithm](link) | Understand GRPO, configure hyperparameters | [`part2_config.py`](part2_config.py) |
+| **1** | [Environment Setup](https://medium.com/@ktiyab_42514/tune-gemma-3-1b-in-jax-with-grpo-for-reasoning-part-1-introduction-environment-setup-628c51ad7f1f) | Install Tunix, configure TPU, set up Kaggle | [`part1_setup.py`](part1_setup.py) |
+| **2** | [GRPO Algorithm](https://medium.com/@ktiyab_42514/tune-gemma-3-1b-in-jax-with-grpo-for-reasoning-part-2-grpo-in-tunix-4cb58a5d2402) | Understand GRPO, configure hyperparameters | [`part2_config.py`](part2_config.py) |
 | **3** | [Data & Rewards](link) | Build data loader, implement 4-component rewards | [`part3_data_rewards.py`](part3_data_rewards.py) |
 | **4** | [Model & LoRA](link) | Load Gemma 3 1B, apply LoRA adapters | [`part4_model_loading.py`](part4_model_loading.py) |
 | **5** | [Reward Testing](link) | Test rewards, tune weights, debug issues | [`part5_reward_testing.py`](part5_reward_testing.py) |
@@ -250,5 +250,6 @@ If you find this tutorial helpful, please give it a star! ⭐
   <a href="https://www.kaggle.com/tiyabk">Kaggle</a>
 
 </p>
+
 
 
