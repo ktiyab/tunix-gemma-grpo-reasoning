@@ -114,12 +114,6 @@ tunix-gemma-grpo-reasoning/
 ├── part6_training_pipeline.py # Training pipeline assembly
 ├── part7_evaluation.py      # Evaluation framework
 ├── part8_conclusion.py      # Export & utilities
-├── configs/
-│   └── default.yaml         # Default hyperparameters
-├── data/
-│   └── sample_dataset.json  # Example training data
-├── notebooks/
-│   └── complete_tutorial.ipynb  # Full Kaggle notebook
 └── README.md
 ```
 
@@ -256,3 +250,4 @@ If you find this tutorial helpful, please give it a star! ⭐
   <a href="https://www.kaggle.com/tiyabk">Kaggle</a>
 
 </p>
+
